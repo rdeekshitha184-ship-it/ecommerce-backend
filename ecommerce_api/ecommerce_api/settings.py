@@ -139,4 +139,6 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
 
+import create_superuser
+create_superuser.run()
 
