@@ -1,204 +1,131 @@
+# 🛒 E-Commerce Backend API (Django + DRF)
 
-# 🛒 Django E-Commerce Backend API
+A fully functional **E-Commerce Backend REST API** built using **Django**, **Django REST Framework**, and **JWT Authentication**, deployed on **Render**. This project supports user authentication, product management, cart operations, and order management.
 
-A Django REST Framework–based **E-Commerce Backend API** that supports user authentication, product management, cart operations, and order processing.
-This project is built to demonstrate **real-world backend architecture** and RESTful API design.
-
----
-
-## 🚀 Features
-
-* 🔐 User Registration & Login (JWT Authentication)
-* 📦 Product Management (CRUD via Admin Panel & APIs)
-* 🛒 Cart Management (Add / View Cart Items)
-* 📑 Order Management (Create & View Orders)
-* 🛠️ Django Admin Panel Support
-* 🔗 RESTful APIs using Django REST Framework
+This project is designed to demonstrate **real-world backend skills** suitable for **internships and entry-level backend roles**.
 
 ---
 
-## 🧰 Tech Stack
+## 🚀 Live Deployment
 
-* **Backend:** Django, Django REST Framework
-* **Authentication:** JWT (JSON Web Tokens)
-* **Database:** SQLite (can be switched to PostgreSQL/MySQL)
-* **API Testing:** Postman
-* **Language:** Python
+* **Backend Base URL**:
+  [https://ecommerce-backend-u24e.onrender.com](https://ecommerce-backend-u24e.onrender.com)
 
----
-
-## 📂 Project Structure
-
-```
-ecommerce_backend/
-│
-├── manage.py
-├── db.sqlite3
-│
-├── ecommerce_api/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-├── accounts/
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   └── urls.py
-│
-├── products/
-├── cart/
-├── orders/
-└── README.md
-```
+* **Admin Panel**:
+  [https://ecommerce-backend-u24e.onrender.com/admin/](https://ecommerce-backend-u24e.onrender.com/admin/)
 
 ---
 
-## ⚙️ Installation & Setup
+## 🔐 Authentication
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/rdeekshitha-ship-it/ecommerce-backend.git
-cd ecommerce-backend
-```
+* JWT Authentication using **djangorestframework-simplejwt**
+* Token-based access for protected APIs
 
 ---
 
-### 2️⃣ Create & Activate Virtual Environment
+## 📦 API Endpoints
 
-```bash
-python -m venv venv
-```
+### 👤 Authentication & Users
 
-**Windows**
-
-```bash
-venv\Scripts\activate
-```
-
-**Mac/Linux**
-
-```bash
-source venv/bin/activate
-```
+| Method | Endpoint         | Description                         |
+| ------ | ---------------- | ----------------------------------- |
+| POST   | `/api/register/` | Register a new user                 |
+| POST   | `/api/token/`    | Generate JWT access & refresh token |
 
 ---
 
-### 3️⃣ Install Dependencies
+### 🛍️ Products
 
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 4️⃣ Run Migrations
-
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
+| Method | Endpoint         | Description              |
+| ------ | ---------------- | ------------------------ |
+| GET    | `/api/products/` | List all products        |
+| POST   | `/api/products/` | Add product (Admin only) |
 
 ---
 
-### 5️⃣ Create Superuser (Admin)
+### 🛒 Cart
 
-```bash
-python manage.py createsuperuser
-```
-
----
-
-### 6️⃣ Run the Server
-
-```bash
-python manage.py runserver
-```
-
-Server will start at:
-
-```
-http://127.0.0.1:8000/
-```
+| Method | Endpoint         | Description              |
+| ------ | ---------------- | ------------------------ |
+| GET    | `/api/cart/`     | View logged-in user cart |
+| POST   | `/api/cart/`     | Create cart item         |
+| POST   | `/api/cart/add/` | Add product to cart      |
 
 ---
 
-## 🔑 API Endpoints (Sample)
+### 📦 Orders
 
-| Feature  | Endpoint         | Method     |
-| -------- | ---------------- | ---------- |
-| Register | `/api/register/` | POST       |
-| Login    | `/api/login/`    | POST       |
-| Products | `/api/products/` | GET        |
-| Cart     | `/api/cart/`     | GET / POST |
-| Orders   | `/api/orders/`   | GET / POST |
-
-🔐 **Authorization:**
-Use JWT token in headers:
-
-```
-Authorization: Bearer <access_token>
-```
+| Method | Endpoint       | Description        |
+| ------ | -------------- | ------------------ |
+| GET    | `/api/orders/` | View user orders   |
+| POST   | `/api/orders/` | Create a new order |
 
 ---
 
-## 🧪 Testing APIs
+## 🔄 Application Flow (How It Works)
 
-* Use **Postman**
-* Set method (GET / POST)
-* Add `Authorization` header for protected routes
-* Send JSON body for POST requests
+### 👨‍💼 Admin Flow
 
----
+1. Admin logs in via `/admin/`
+2. Adds products through Django Admin Panel
+3. Products become available via `/api/products/`
 
-## 👩‍💻 Admin Panel
+### 👤 User Flow
 
-Access Django Admin:
+1. User registers using `/api/register/`
+2. User logs in using `/api/token/`
+3. JWT **Access Token** is used in headers:
 
-```
-http://127.0.0.1:8000/admin/
-```
-
-From here you can:
-
-* Add products
-* Manage users
-* View carts & orders
+   ```
+   Authorization: Bearer <access_token>
+   ```
+4. User views products
+5. Adds products to cart
+6. Places orders
 
 ---
 
-## 🎯 Project Purpose
+## 🧪 API Testing
 
-This project was built to:
+* APIs tested using **Postman**
+* Includes authentication, cart, and order workflows
 
-* Understand Django REST Framework deeply
-* Learn real-world backend workflows
-* Practice authentication & authorization
-* Prepare for internships & backend developer roles
-
----
-
-## 📌 Future Improvements
-
-* Payment Gateway Integration
-* Product Categories
-* Order Status Tracking
-* Deployment (Render / Railway / AWS)
-* Swagger API Documentation
+📬 **Postman Collection**:
+[https://rdeekshitha184-3372244.postman.co/workspace/Deekshitha-R's-Workspace~f5b6358d-8de4-4c86-8b55-970d4dae5cd4/collection/51652683-d9a92b45-42df-466c-a017-a64dd247316b?action=share&source=copy-link&creator=51652683](https://rdeekshitha184-3372244.postman.co/workspace/Deekshitha-R's-Workspace~f5b6358d-8de4-4c86-8b55-970d4dae5cd4/collection/51652683-d9a92b45-42df-466c-a017-a64dd247316b?action=share&source=copy-link&creator=51652683)
 
 ---
 
-## 🙋‍♀️ Author
+## 🛠️ Tech Stack
+
+* **Backend**: Django, Django REST Framework
+* **Authentication**: JWT (SimpleJWT)
+* **Database**: PostgreSQL (Render)
+* **Deployment**: Render
+* **API Testing**: Postman
+
+---
+
+## 📂 GitHub Repository
+
+🔗 [https://github.com/rdeekshitha184-ship-it/ecommerce-backend](https://github.com/rdeekshitha184-ship-it/ecommerce-backend)
+
+---
+
+## 🎯 Why This Project?
+
+* Real-world REST API architecture
+* Authentication & authorization
+* CRUD operations
+* Deployment-ready backend
+* Suitable for internships & placements
+
+---
+
+## 👩‍💻 Author
 
 **Deekshitha R**
-Aspiring Backend Developer | Django & Python Enthusiast
+6th Semester | Backend & AIML Enthusiast
 
 ---
 
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub — it motivates me to build more!
-
-
+⭐ *If you like this project, don’t forget to star the repository!*
