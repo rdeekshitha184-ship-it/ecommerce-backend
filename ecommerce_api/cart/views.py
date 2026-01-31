@@ -4,13 +4,18 @@ from rest_framework.response import Response
 from .models import Cart
 from .serializers import CartSerializer
 
-class CartListAPI(APIView):
+
+class CartView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
         carts = Cart.objects.filter(user=request.user)
         serializer = CartSerializer(carts, many=True)
         return Response(serializer.data)
+
+
+class AddToCartView(APIView):
+    permission_classes = [IsAuthenticated]
 
     def post(self, request):
         serializer = CartSerializer(data=request.data)

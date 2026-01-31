@@ -5,6 +5,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 urlpatterns = [
     path('register/', RegisterAPI.as_view()),
     path('login/', TokenObtainPairView.as_view()),
-    path('api/', include('cart.urls')),
+    
 
 ]
