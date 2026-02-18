@@ -136,12 +136,12 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 ---
 
 ### 🛍 Product API
-![Products](screenshots/products.png)
+![Products](screenshots/Screenshot%202026-02-18%20203453.png)
 
 ---
 
 ### 🧾 Orders API
-![Orders](screenshots/order.png)
+![Orders](screenshots/Screenshot%202026-02-18%20203239.png)
 
 ---
 
