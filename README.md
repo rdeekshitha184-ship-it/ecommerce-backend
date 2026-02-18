@@ -119,6 +119,33 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 * Deployment-ready backend
 * Suitable for internships & placements
 
+---
+
+---
+##Project screenshots
+### 🔐 Admin Panel
+![Admin Panel](screenshots/admin.png)
+
+---
+
+### 🔐 Authentication Panel
+![User Registration](screenshots/register.png)
+
+---
+
+### 🛍 Product API
+![Products](screenshots/products.png)
+
+---
+
+### 🧾 Orders API
+![Orders](screenshots/order.png)
+
+---
+
+### 🛒 Cart API
+![Cart](screenshots/carts.png)
+
 
 ## 👩‍💻 Author
 
@@ -126,6 +153,5 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 6th Semester | Backend & AIML Enthusiast
 
 ---
-
-
+> ⚠️ Note: This project was deployed on Render (free tier), which may sleep or expire.
 ⭐ *If you like this project, don’t forget to star the repository!*
