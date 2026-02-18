@@ -126,12 +126,12 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 ## Project Screenshots
 
 ### 🔐 Admin Panel
-![Admin Panel](screenshots/admin.png)
+![Admin Panel](screenshots/Screenshot%202026-02-18%20203254.png)
 
 ---
 
 ### 🔐 Authentication Panel
-![User Registration](screenshots/register.png)
+![User Registration](screenshots/Screenshot%202026-02-18%20203436.png)
 
 ---
 
