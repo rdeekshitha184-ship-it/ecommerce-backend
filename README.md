@@ -119,7 +119,6 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 * Deployment-ready backend
 * Suitable for internships & placements
 
----
 
 ## 👩‍💻 Author
 
@@ -127,5 +126,6 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 6th Semester | Backend & AIML Enthusiast
 
 ---
+
 
 ⭐ *If you like this project, don’t forget to star the repository!*
