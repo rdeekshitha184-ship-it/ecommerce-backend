@@ -141,12 +141,12 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 ---
 
 ### 🧾 Orders API
-![Orders](screenshots/Screenshot%202026-02-18%20203239.png)
+![Orders](screenshots/Screenshot%202026-02-18%20203348.png)
 
 ---
 
 ### 🛒 Cart API
-![Cart](screenshots/carts.png)
+![Cart](screenshots/Screenshot%202026-02-18%20203239.png)
 
 
 ## 👩‍💻 Author
