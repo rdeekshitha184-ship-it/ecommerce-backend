@@ -122,7 +122,9 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 ---
 
 ---
-##Project screenshots
+
+## Project Screenshots
+
 ### 🔐 Admin Panel
 ![Admin Panel](./screenshots/admin.png)
 
