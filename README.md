@@ -124,27 +124,27 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 ---
 ##Project screenshots
 ### 🔐 Admin Panel
-![Admin Panel](screenshots/admin.png)
+![Admin Panel](./screenshots/admin.png)
 
 ---
 
 ### 🔐 Authentication Panel
-![User Registration](screenshots/register.png)
+![User Registration](./screenshots/register.png)
 
 ---
 
 ### 🛍 Product API
-![Products](screenshots/products.png)
+![Products](./screenshots/products.png)
 
 ---
 
 ### 🧾 Orders API
-![Orders](screenshots/order.png)
+![Orders](./screenshots/order.png)
 
 ---
 
 ### 🛒 Cart API
-![Cart](screenshots/carts.png)
+![Cart](./screenshots/carts.png)
 
 
 ## 👩‍💻 Author
