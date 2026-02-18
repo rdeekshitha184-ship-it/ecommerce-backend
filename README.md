@@ -126,7 +126,7 @@ This project is designed to demonstrate **real-world backend skills** suitable f
 ## Project Screenshots
 
 ### 🔐 Admin Panel
-![Admin Panel](./screenshots/admin.png)
+![Admin Panel]("C:\Users\hp\Pictures\Screenshots\Screenshot 2026-02-18 203254.png")
 
 ---
 
